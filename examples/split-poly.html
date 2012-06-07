@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Split Polygons</title>
+        <link rel="stylesheet" type="text/css" href="../externals/openlayers/theme/default/style.css">
+        <style>
+            body {
+                font: 1em "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+                margin: 2em;
+            }
+            #map {
+                width: 512px;
+                height: 256px;
+            }
+            ul.tools {
+                list-style: none;
+            }
+            .olControlAttribution {
+                bottom: 2px;
+                font-size: 10px;
+                color: white;
+                opacity: 0.75;
+            }
+            .olControlAttribution a {
+                color: white;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>gs:SplitPolygon</h1>
+        <div id="map"></div>
+        <ul class="tools">
+            <li><input type="radio" name="tool" id="draw"><label for="draw"> draw</label></li>
+            <li><input type="radio" name="tool" id="split"><label for="split"> split</label></li>
+            <li><input type="radio" name="tool" id="drag"><label for="drag"> drag</label></li>
+        </ul>
+        <script type="text/javascript" src="../externals/openlayers/lib/OpenLayers.js"></script>
+        <script type="text/javascript" src="split-poly.js"></script>
+    </body>
+</html>
