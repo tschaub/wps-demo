@@ -176,4 +176,6 @@ var toggleDrag = dragToggle.onclick = function() {
         drawLine.deactivate();
         dragPoly.activate();
     } else {
-  
+        dragPoly.deactivate();
+    }
+};
